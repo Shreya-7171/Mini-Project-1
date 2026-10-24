@@ -1,0 +1,6 @@
+civicvision.db
+uploads/
+runs/
+__pycache__/
+*.pyc
+.venv/

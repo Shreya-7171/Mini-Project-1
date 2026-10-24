@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic[email]
+Pillow
+ultralytics
+bcrypt
+passlib
+python-jose[cryptography]

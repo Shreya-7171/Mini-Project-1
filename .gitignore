@@ -1,0 +1,36 @@
+# v0 sandbox internal files
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+.snowflake/
+.v0-trash/
+.vercel/
+
+# Local HTTPS certificates for LAN development (generated with mkcert)
+certs/*.pem
+
+# Environment variables
+.env*.local
+
+# Common ignores
+node_modules
+.next/
+.DS_Store
+.gradle-home/
+
+# Private data and generated files
+.env
+.env.*
+!.env.example
+.pnpm-store/
+out/
+*.log
+tsconfig.tsbuildinfo
+Backend/*.db
+Backend/uploads/
+Backend/runs/
+Backend/__pycache__/
+Backend/.venv/
+android/local.properties
+android/.gradle/
+android/**/build/
