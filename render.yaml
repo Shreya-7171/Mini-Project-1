@@ -2,26 +2,22 @@ services:
   - type: web
     name: mini-project-1-api
     runtime: docker
-    plan: 1c-2g
+    plan: free
     region: singapore
     dockerfilePath: ./Backend/Dockerfile
     dockerContext: ./Backend
     healthCheckPath: /health
-    disk:
-      name: civicvision-data
-      mountPath: /home/data
-      sizeGB: 1
     envVars:
       - key: APP_ENV
         value: production
       - key: PORT
         value: "8000"
       - key: DATA_DIR
-        value: /home/data
+        value: /tmp/data
       - key: UPLOAD_DIR
-        value: /home/data/uploads
+        value: /tmp/data/uploads
       - key: DB_PATH
-        value: /home/data/civicvision.db
+        value: /tmp/data/civicvision.db
       - key: SECRET_KEY
         generateValue: true
       - key: CORS_ORIGINS
